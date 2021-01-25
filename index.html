@@ -8,6 +8,10 @@
   <link rel="icon" href="https://i.ibb.co/7bBTSML/Whats-App-Image-2021-01-22-at-20-56-56.jpg">
 </head>
 <body>
+
+  
+  
+
   <!-- Header -->
   <section id="header">
     <div class="header container">
@@ -149,14 +153,29 @@
         <h2> Time to say goodbye!</h2>
         <P> So, dear reader, hope you enjoyed the first step of a young web developer and will leave us with a good impression</P>
         <a href="#" class="cta">See you on next project!</a>
-        <button>Time</button>
-        <h1 style="text-align: center;">Smile</h1>
       </div>
     </div>
   </section>
   <!-- End  Section -->
 
-  
+
+  <label id="lblGreetings"></label>
+
+  <script type="text/javascript">
+        document.write("<center><font size=+3 style='color: green;'>");
+        var day = new Date();
+        var hr = day.getHours();
+        if (hr >= 0 && hr < 12) {
+            document.write("Good Morning!");
+        } else if (hr == 12) {
+            document.write("Good Noon!");
+        } else if (hr >= 12 && hr <= 17) {
+            document.write("Good Afternoon!");
+        } else {
+            document.write("Good Evening!");
+        }
+        document.write("</font></center>");
+    </script>
 
   <!-- son -->
   <section id="son">
@@ -168,6 +187,6 @@
   <!-- End son -->
   
 
-  <script src="script.js"></script>
+  
 </body>
 </html>
